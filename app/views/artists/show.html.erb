@@ -2,5 +2,5 @@
 <p><%= @artist.bio %></p>
 
 <% @artist.songs.each do |song| %>
-	<%= link_to song.name, @song %><br>
+	<%= link_to song.name, song %><br>
 	<% end %>
