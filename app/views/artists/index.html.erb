@@ -1,0 +1,11 @@
+<table>
+  <% @artists.each do |artist| %>
+    <tr>
+      <td><%= link_to artist.name, artist %></td>
+      <td><%= button_to 'Edit', edit_song_path(artist), method: 'get' %></td>
+      <td><%= button_to 'Remove', artist, method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Create Artist", new_artist_path %>

@@ -1,0 +1,6 @@
+<h1>Create Artist</h1>
+<%= form_for @artist do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :bio, placeholder: "bio" %>
+  <%= form.submit "Create Artist" %>
+<% end %>

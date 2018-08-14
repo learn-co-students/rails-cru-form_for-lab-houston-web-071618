@@ -1,0 +1,8 @@
+<%= link_to 'Song Home Page', songs_path %>
+<h1><%= @song.name %></h1>
+<p><%= @song.name %></p>
+
+<ul>
+  <li>Artist: <%=link_to @song.artist.name, @song.artist %></li>
+  <li>Genre: <%=link_to @song.genre.name, @song.genre %></li>
+</ul>
